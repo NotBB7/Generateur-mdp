@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Générateur mot de passe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="header">Génère ton<br />
+
+            <span id="header-text-randpass">mot de passe</span>
+        </h1>
+        <p>N'utilisez plus jamais un mot de passe non sécurisé.</p>
+        <div class="row">
+            <div class="num-selector">
+                <span class="num-selector-text"></span>
+                <button onClick="increment()" class="num-selector-button">+</button>
+                <span id="num-text">2</span>
+                <button onClick="decrement()" class="num-selector-button">-</button>
+            </div>
+            
+            <span class="Switch-Text">Symboles</span>
+            <label class="switch">
+                <input type="checkbox" id="symbols" onchange="track()"/>
+                <span class="slider"></span>
+            </label>
+            <span class="Switch-Text">Nombre</span>
+                <label class="switch">
+                <input type="checkbox" id="number" onchange="track()" />
+            <span class="slider"></span>
+            </label>
+            
+        </div>
+        <button onClick="randerPassword()">Génère ton mot de passe</button>
+        <hr/>
+        
+            <div class="container-inputs">
+                <div class="row">
+                    <input class="input password-one" id="pass-one" />
+                    <input class="input password-two" id="pass-two" />
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
